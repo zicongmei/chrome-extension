@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Playbook Solver Options</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 10px;
+            min-width: 350px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        input[type="url"],
+        input[type="text"] {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            /* Increased padding */
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            /* Added rounded corners */
+        }
+
+        button {
+            padding: 10px 18px;
+            /* Increased padding */
+            cursor: pointer;
+            /* Added cursor */
+            background-color: #4CAF50;
+            /* Added background color */
+            color: white;
+            /* Added text color */
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            /* Darker shade on hover */
+        }
+
+        #status {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Playbook Solver Settings</h1>
+
+    <label for="playbookUrl">Playbook URL (HTML):</label>
+    <input type="url" id="playbookUrl" placeholder="https://example.com/path/to/playbook.html">
+
+    <label for="projectId">Google Cloud Project ID:</label>
+    <input type="text" id="projectId" placeholder="your-gcp-project-id">
+
+    <button id="saveButton">Save Settings</button>
+    <div id="status"></div>
+
+    <script src="options.js"></script>
+</body>
+
+</html>

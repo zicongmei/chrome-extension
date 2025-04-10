@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Playbook Analyzer</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 15px;
+            min-width: 350px;
+        }
+
+        button {
+            padding: 10px 15px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        #status {
+            font-style: italic;
+            color: grey;
+            margin-bottom: 10px;
+        }
+
+        #results {
+            white-space: pre-wrap;
+            /* Preserve whitespace/newlines */
+            word-wrap: break-word;
+            border: 1px solid #ccc;
+            padding: 10px;
+            min-height: 50px;
+            max-height: 300px;
+            overflow-y: auto;
+            background-color: #f9f9f9;
+        }
+
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Analyze Page with Playbook</h3>
+    <div id="status">Click the button to start analysis.</div>
+    <button id="analyzeButton">Analyze This Page</button>
+    <h4>Results:</h4>
+    <div id="results"></div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
