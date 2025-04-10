@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Gemini Page Summarizer (OAuth)",
+    "version": "1.1",
+    "description": "Summarizes page content using Vertex AI Gemini via Google Sign-In.",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage",
+        "identity"
+    ],
+    "host_permissions": [
+        "https://us-central1-aiplatform.googleapis.com/"
+    ],
+    "oauth2": {
+        "client_id": "565326050482-jbsb2joaf94qg5hplp6jalll3o1kn39j.apps.googleusercontent.com",
+        "scopes": [
+            "https://www.googleapis.com/auth/cloud-platform"
+        ]
+    },
+    "action": {
+        "default_title": "Summarize Page (OAuth)",
+        "default_popup": "popup.html"
+    },
+    "options_page": "options.html"
+}
